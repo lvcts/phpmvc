@@ -27,12 +27,13 @@ class Mahasiswa_model
     {
         $query = "INSERT INTO mahasiswa
                     VALUES
-                  (null, :nama, :nrp, :kelas)";
+                  (null, :nama, :nrp, :kelas, :matakuliah)";
 
         $this->db->query($query);
         $this->db->bind('nama', $data['nama']);
         $this->db->bind('nrp', $data['nrp']);
         $this->db->bind('kelas', $data['kelas']);
+        $this->db->bind('matakuliah', $data['matakuliah']);
 
         $this->db->execute();
 
@@ -57,13 +58,15 @@ class Mahasiswa_model
         $query = "UPDATE mahasiswa SET
                     nama = :nama,
                     nrp = :nrp,
-                    kelas = :kelas
+                    kelas = :kelas,
+                    matakuliah = :matakuliah
                   WHERE id = :id";
 
         $this->db->query($query);
         $this->db->bind('nama', $data['nama']);
         $this->db->bind('nrp', $data['nrp']);
         $this->db->bind('kelas', $data['kelas']);
+        $this->db->bind('matakuliah', $data['matakuliah']);
         $this->db->bind('id', $data['id']);
 
         $this->db->execute();

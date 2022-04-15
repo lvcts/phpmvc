@@ -10,6 +10,7 @@
             $('#nama').val('');
             $('#nrp').val('');
             $('#kelas').val('');
+            $('#matakuliah').val('');
             $('#id').val('');
         });
 
@@ -33,6 +34,7 @@
                     $('#nama').val(data.nama);
                     $('#nrp').val(data.nrp);
                     $('#kelas').val(data.kelas);
+                    $('#matakuliah').val('');
                     $('#id').val(data.id);
                 }
             });

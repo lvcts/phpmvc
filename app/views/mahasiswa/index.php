@@ -8,7 +8,7 @@
 
   <div class="row mb-3">
     <div class="col-lg-6">
-      <button type="button" class="btn btn-primary tombolTambahData" data-toggle="modal" data-target="#formModal">
+      <button type="button" class="btn btn-dark tombolTambahData" data-toggle="modal" data-target="#formModal">
         Tambah Data Mahasiswa
       </button>
     </div>
@@ -20,7 +20,7 @@
         <div class="input-group">
           <input type="text" class="form-control" placeholder="cari mahasiswa.." name="keyword" id="keyword" autocomplete="off">
           <div class="input-group-append">
-            <button class="btn btn-primary" type="submit" id="tombolCari">Cari</button>
+            <button class="btn btn-dark" type="submit" id="tombolCari">Cari</button>
           </div>
         </div>
       </form>
@@ -75,20 +75,16 @@
             <select class="form-control" id="kelas" name="kelas">
               <option value="2019A">2019A</option>
               <option value="2019B">2019B</option>
-              <option value="2019C">2019C</option>
-              <option value="2019D">2019D</option>
-              <option value="2019E">2019E</option>
               <option value="2020A">2020A</option>
               <option value="2020B">2020B</option>
-              <option value="2020C">2020C</option>
-              <option value="2020D">2020D</option>
-              <option value="2020E">2020E</option>
               <option value="2021A">2021A</option>
               <option value="2021B">2021B</option>
-              <option value="2021C">2021C</option>
-              <option value="2021D">2021D</option>
-              <option value="2021E">2021E</option>
             </select>
+          </div>
+
+          <div class="form-group">
+            <label for="matakuliah">Matakuliah</label>
+            <input type="text" class="form-control" id="matakuliah" name="matakuliah">
           </div>
 
       </div>
